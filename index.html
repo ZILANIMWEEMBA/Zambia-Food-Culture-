@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taste Zambia — Food Culture & Heritage</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🍲</div>
+      Taste Zambia
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/menu.html">Menu</a></li>
+      <li><a href="pages/details.html">Recipes</a></li>
+      <li><a href="#culture">Culture</a></li>
+      <li><a href="#about" class="nav-cta">Explore</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-eyebrow">🇿🇲 Discover Zambian Heritage</span>
+        <h1 class="hero-title">
+          The Taste of <span>Zambia</span> Awaits You
+        </h1>
+        <p class="hero-desc">
+          Explore the rich flavours, traditions, and stories behind Zambia's beloved traditional foods — from nshima to ifisashi, from street markets to family kitchens.
+        </p>
+        <div class="hero-btns">
+          <a href="pages/menu.html" class="btn-primary">🍽 Browse Dishes</a>
+          <a href="#culture" class="btn-outline">🎭 Explore Culture</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-img-frame">
+          <!-- ORGANIZER IMAGE SLOT: replace src with provided photo -->
+          <div class="hero-img-placeholder">
+            <span class="ph-icon">🍲</span>
+            <p>Hero dish photo<br/><em>(organizer will provide)</em></p>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span>50+</span>
+          Traditional Recipes
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CATEGORY QUICK LINKS
+  ══════════════════════════════════════ -->
+  <section class="section" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="section-inner">
+      <div class="section-header animate-up">
+        <span class="section-eyebrow">What are you craving?</span>
+        <h2 class="section-title">Browse by <span>Category</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px;">
+        <!-- Category cards -->
+        <a href="pages/menu.html?cat=staples" class="animate-up" style="text-align:center; padding:28px 16px; background:var(--white); border-radius:var(--radius-lg); box-shadow:0 4px 16px var(--shadow); transition:transform var(--transition), box-shadow var(--transition); text-decoration:none;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px var(--shadow-md)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <div style="font-size:2.4rem; margin-bottom:10px;">🌽</div>
+          <div style="font-family:var(--font-display); font-weight:700; color:var(--bark); margin-bottom:4px;">Staples</div>
+          <div style="font-size:0.78rem; color:var(--copper);">Nshima & More</div>
+        </a>
+        <a href="pages/menu.html?cat=stews" class="animate-up" style="text-align:center; padding:28px 16px; background:var(--white); border-radius:var(--radius-lg); box-shadow:0 4px 16px var(--shadow); transition:transform var(--transition), box-shadow var(--transition); text-decoration:none;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+          <div style="font-size:2.4rem; margin-bottom:10px;">🥘</div>
+          <div style="font-family:var(--font-display); font-weight:700; color:var(--bark); margin-bottom:4px;">Stews</div>
+          <div style="font-size:0.78rem; color:var(--copper);">Ifisashi & More</div>
+        </a>
+        <a href="pages/menu.html?cat=street" class="animate-up" style="text-align:center; padding:28px 16px; background:var(--white); border-radius:var(--radius-lg); box-shadow:0 4px 16px var(--shadow); transition:transform var(--transition), box-shadow var(--transition); text-decoration:none;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+          <div style="font-size:2.4rem; margin-bottom:10px;">🌯</div>
+          <div style="font-family:var(--font-display); font-weight:700; color:var(--bark); margin-bottom:4px;">Street Food</div>
+          <div style="font-size:0.78rem; color:var(--copper);">Markets & Vendors</div>
+        </a>
+        <a href="pages/menu.html?cat=drinks" class="animate-up" style="text-align:center; padding:28px 16px; background:var(--white); border-radius:var(--radius-lg); box-shadow:0 4px 16px var(--shadow); transition:transform var(--transition), box-shadow var(--transition); text-decoration:none;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+          <div style="font-size:2.4rem; margin-bottom:10px;">🍶</div>
+          <div style="font-family:var(--font-display); font-weight:700; color:var(--bark); margin-bottom:4px;">Drinks</div>
+          <div style="font-size:0.78rem; color:var(--copper);">Munkoyo & More</div>
+        </a>
+        <a href="pages/menu.html?cat=snacks" class="animate-up" style="text-align:center; padding:28px 16px; background:var(--white); border-radius:var(--radius-lg); box-shadow:0 4px 16px var(--shadow); transition:transform var(--transition), box-shadow var(--transition); text-decoration:none;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+          <div style="font-size:2.4rem; margin-bottom:10px;">🥜</div>
+          <div style="font-family:var(--font-display); font-weight:700; color:var(--bark); margin-bottom:4px;">Snacks</div>
+          <div style="font-size:0.78rem; color:var(--copper);">Groundnuts & More</div>
+        </a>
+        <a href="pages/menu.html?cat=desserts" class="animate-up" style="text-align:center; padding:28px 16px; background:var(--white); border-radius:var(--radius-lg); box-shadow:0 4px 16px var(--shadow); transition:transform var(--transition), box-shadow var(--transition); text-decoration:none;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+          <div style="font-size:2.4rem; margin-bottom:10px;">🍌</div>
+          <div style="font-family:var(--font-display); font-weight:700; color:var(--bark); margin-bottom:4px;">Sweets</div>
+          <div style="font-size:0.78rem; color:var(--copper);">Fruits & Treats</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FEATURED DISH BANNER
+  ══════════════════════════════════════ -->
+  <section class="section" style="padding-top:0;">
+    <div class="section-inner">
+      <div class="featured-banner animate-up">
+        <div class="featured-banner-bg"></div>
+        <div class="featured-banner-img">
+          <!-- ORGANIZER IMAGE SLOT: replace with featured dish photo -->
+        </div>
+        <div class="featured-banner-content">
+          <span class="featured-tag">⭐ Dish of the Week</span>
+          <h2>Nshima with Ifisashi</h2>
+          <p>The heart of Zambian cuisine — thick maize porridge served with a rich groundnut leaf stew. A meal that has nourished generations across the country.</p>
+          <a href="pages/details.html" class="btn-primary" style="display:inline-flex;">See Full Recipe →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       POPULAR DISHES
+  ══════════════════════════════════════ -->
+  <section class="section" style="background: var(--ivory);" id="dishes">
+    <div class="section-inner">
+      <div class="section-header animate-up">
+        <span class="section-eyebrow">Loved by Many</span>
+        <h2 class="section-title">Popular <span>Dishes</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Search -->
+      <div class="search-wrap animate-up">
+        <span style="font-size:1rem; color:#B0906A; margin-right:4px;">🔍</span>
+        <input type="text" placeholder="Search dishes, ingredients, regions…" />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="category-tabs animate-up">
+        <button class="tab-btn active" data-category="all">All Dishes</button>
+        <button class="tab-btn" data-category="staples">Staples</button>
+        <button class="tab-btn" data-category="stews">Stews</button>
+        <button class="tab-btn" data-category="street">Street Food</button>
+        <button class="tab-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="food-card animate-up" data-category="staples">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/nshima.jpg" alt="Nshima"> -->
+            <div class="card-img-placeholder">
+              <span class="ph-icon">🌽</span>
+              <span>Nshima photo</span>
+            </div>
+            <span class="card-badge">Staple</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-region">🗺 Nationwide</span>
+              <span class="card-rating">⭐ 4.9</span>
+            </div>
+            <h3 class="card-title">Nshima</h3>
+            <p class="card-desc">Zambia's national dish — a thick, smooth maize porridge eaten with the hands alongside relish.</p>
+            <div class="card-footer">
+              <span class="card-time">⏱ 30 min</span>
+              <a href="pages/details.html" class="card-link">View Recipe →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/ifisashi.jpg" alt="Ifisashi"> -->
+            <div class="card-img-placeholder">
+              <span class="ph-icon">🥬</span>
+              <span>Ifisashi photo</span>
+            </div>
+            <span class="card-badge">Stew</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-region">🗺 Eastern Province</span>
+              <span class="card-rating">⭐ 4.8</span>
+            </div>
+            <h3 class="card-title">Ifisashi</h3>
+            <p class="card-desc">A creamy groundnut and leafy greens stew, rich in flavour and traditionally served with nshima.</p>
+            <div class="card-footer">
+              <span class="card-time">⏱ 45 min</span>
+              <a href="pages/details.html" class="card-link">View Recipe →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/kapenta.jpg" alt="Kapenta"> -->
+            <div class="card-img-placeholder">
+              <span class="ph-icon">🐟</span>
+              <span>Kapenta photo</span>
+            </div>
+            <span class="card-badge">Fish</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-region">🗺 Luapula</span>
+              <span class="card-rating">⭐ 4.7</span>
+            </div>
+            <h3 class="card-title">Kapenta</h3>
+            <p class="card-desc">Tiny dried Lake Kariba sardines fried or stewed with tomatoes and onions — a protein-packed classic.</p>
+            <div class="card-footer">
+              <span class="card-time">⏱ 25 min</span>
+              <a href="pages/details.html" class="card-link">View Recipe →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/chibwabwa.jpg" alt="Chibwabwa"> -->
+            <div class="card-img-placeholder">
+              <span class="ph-icon">🎃</span>
+              <span>Chibwabwa photo</span>
+            </div>
+            <span class="card-badge">Veggie</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-region">🗺 Copperbelt</span>
+              <span class="card-rating">⭐ 4.6</span>
+            </div>
+            <h3 class="card-title">Chibwabwa</h3>
+            <p class="card-desc">Pumpkin leaves cooked in peanut sauce — a beloved vegetable relish packed with nutrients and tradition.</p>
+            <div class="card-footer">
+              <span class="card-time">⏱ 35 min</span>
+              <a href="pages/details.html" class="card-link">View Recipe →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="food-card animate-up" data-category="street">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/vitumbuwa.jpg" alt="Vitumbuwa"> -->
+            <div class="card-img-placeholder">
+              <span class="ph-icon">🥞</span>
+              <span>Vitumbuwa photo</span>
+            </div>
+            <span class="card-badge">Street</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-region">🗺 Lusaka</span>
+              <span class="card-rating">⭐ 4.8</span>
+            </div>
+            <h3 class="card-title">Vitumbuwa</h3>
+            <p class="card-desc">Fluffy deep-fried doughnut balls sold on every street corner — Zambia's favourite breakfast snack.</p>
+            <div class="card-footer">
+              <span class="card-time">⏱ 20 min</span>
+              <a href="pages/details.html" class="card-link">View Recipe →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="food-card animate-up" data-category="drinks">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/munkoyo.jpg" alt="Munkoyo"> -->
+            <div class="card-img-placeholder">
+              <span class="ph-icon">🍶</span>
+              <span>Munkoyo photo</span>
+            </div>
+            <span class="card-badge">Drink</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-region">🗺 Western Province</span>
+              <span class="card-rating">⭐ 4.5</span>
+            </div>
+            <h3 class="card-title">Munkoyo</h3>
+            <p class="card-desc">A traditional fermented drink brewed from roots and maize — refreshing, natural, and culturally significant.</p>
+            <div class="card-footer">
+              <span class="card-time">⏱ 2 days</span>
+              <a href="pages/details.html" class="card-link">View Recipe →</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- end .cards-grid -->
+
+      <div style="text-align:center; margin-top:48px;" class="animate-up">
+        <a href="pages/menu.html" class="btn-primary">View All Dishes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CULTURE SECTION
+  ══════════════════════════════════════ -->
+  <section class="section" id="culture">
+    <div class="section-inner">
+      <div class="section-header animate-up">
+        <span class="section-eyebrow">More Than Just Food</span>
+        <h2 class="section-title">The <span>Culture</span> Behind Every Bite</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:center;">
+        <div class="animate-up">
+          <!-- IMAGE SLOT: culture photo -->
+          <div style="height:340px; border-radius:var(--radius-lg); background:linear-gradient(135deg,var(--earth),var(--copper)); display:flex; align-items:center; justify-content:center; box-shadow:0 16px 40px var(--shadow-md);">
+            <div style="text-align:center; color:rgba(255,255,255,0.4);">
+              <div style="font-size:4rem;">🎭</div>
+              <p style="font-size:0.85rem; color:rgba(255,255,255,0.4);">Culture photo<br/>(organizer provides)</p>
+            </div>
+          </div>
+        </div>
+        <div class="animate-up">
+          <p style="color:var(--copper); font-weight:600; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:14px;">A Living Tradition</p>
+          <h3 style="color:var(--bark); margin-bottom:18px; font-size:1.8rem;">Food is the Heart of Zambian Identity</h3>
+          <p style="margin-bottom:16px;">In Zambia, food is never just sustenance — it is celebration, community, and memory. Every dish carries the story of a people, a place, and a way of life passed down through generations.</p>
+          <p style="margin-bottom:28px;">From the <strong>72+ ethnic groups</strong> across Zambia's 10 provinces, each brings unique ingredients, cooking methods, and ceremonies that centre around food and sharing.</p>
+          <a href="#" class="btn-primary" style="display:inline-flex;">Read Culture Stories →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       STATS
+  ══════════════════════════════════════ -->
+  <section class="section chitenge-bg" id="about">
+    <div class="section-inner">
+      <div class="section-header animate-up">
+        <span class="section-eyebrow" style="color:var(--gold);">By the Numbers</span>
+        <h2 class="section-title" style="color:var(--white);">Zambia's Food <span style="color:var(--gold);">Heritage</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="stats-row animate-up">
+        <div class="stat-card">
+          <div class="stat-num" data-target="72" data-suffix="+">0+</div>
+          <div class="stat-label">Ethnic Groups</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="50" data-suffix="+">0+</div>
+          <div class="stat-label">Traditional Dishes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="10">0</div>
+          <div class="stat-label">Provinces</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="200" data-suffix="+">0+</div>
+          <div class="stat-label">Restaurants Listed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>🍲 Taste Zambia</h3>
+          <p>Celebrating the rich culinary heritage of Zambia — one dish at a time. Explore, cook, and savour the flavours of home.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/menu.html">All Dishes</a></li>
+            <li><a href="pages/details.html">Recipes</a></li>
+            <li><a href="#culture">Culture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Staples</a></li>
+            <li><a href="#">Stews & Relish</a></li>
+            <li><a href="#">Street Food</a></li>
+            <li><a href="#">Drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="#">Lusaka</a></li>
+            <li><a href="#">Copperbelt</a></li>
+            <li><a href="#">Eastern</a></li>
+            <li><a href="#">Western</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Taste Zambia · App Innovators Club · Food Culture in Zambia Design Competition</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

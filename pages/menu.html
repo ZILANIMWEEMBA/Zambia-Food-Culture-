@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Taste Zambia</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">🍲</div>
+      Taste Zambia
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="details.html">Recipes</a></li>
+      <li><a href="../index.html#culture">Culture</a></li>
+      <li><a href="../index.html#about" class="nav-cta">Explore</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section style="padding: calc(var(--nav-h) + 50px) 5% 50px; background: linear-gradient(135deg, var(--bark), var(--earth)); position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; opacity:0.07; background-image: repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(255,255,255,0.5) 18px, rgba(255,255,255,0.5) 20px), repeating-linear-gradient(-45deg, transparent, transparent 18px, rgba(255,255,255,0.5) 18px, rgba(255,255,255,0.5) 20px);"></div>
+    <div style="max-width:1200px; margin:0 auto; position:relative; z-index:1;">
+      <span style="font-size:0.78rem; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); display:block; margin-bottom:10px;">All Dishes</span>
+      <h1 style="color:var(--white); margin-bottom:14px;">Zambian Food <span style="color:var(--gold); font-style:italic;">Menu</span></h1>
+      <p style="color:rgba(255,255,255,0.75); max-width:560px;">Discover traditional dishes, street food favourites, and regional specialties from across all 10 provinces of Zambia.</p>
+    </div>
+  </section>
+
+  <!-- SEARCH + FILTER BAR -->
+  <section style="padding: 40px 5% 0; background: var(--ivory);">
+    <div style="max-width:1200px; margin:0 auto;">
+
+      <!-- Search -->
+      <div class="search-wrap animate-up" style="margin-bottom:28px; max-width:100%;">
+        <span style="font-size:1rem; color:#B0906A; margin-right:4px;">🔍</span>
+        <input type="text" placeholder="Search by dish name, ingredient, or region…" />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <!-- Filter Row -->
+      <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; padding-bottom:28px; border-bottom:1px solid rgba(201,106,43,0.1);">
+        <span style="font-size:0.82rem; font-weight:600; color:var(--bark); margin-right:4px;">Filter:</span>
+        <div class="category-tabs" style="margin:0; justify-content:flex-start;">
+          <button class="tab-btn active" data-category="all">All</button>
+          <button class="tab-btn" data-category="staples">Staples</button>
+          <button class="tab-btn" data-category="stews">Stews</button>
+          <button class="tab-btn" data-category="street">Street Food</button>
+          <button class="tab-btn" data-category="drinks">Drinks</button>
+          <button class="tab-btn" data-category="snacks">Snacks</button>
+          <button class="tab-btn" data-category="desserts">Sweets</button>
+        </div>
+
+        <!-- Region Filter -->
+        <select style="margin-left:auto; padding:9px 16px; border-radius:var(--radius-xl); border:2px solid rgba(201,106,43,0.2); font-family:var(--font-body); font-size:0.875rem; color:var(--bark); background:var(--white); cursor:pointer; outline:none;">
+          <option value="">All Regions</option>
+          <option>Lusaka</option>
+          <option>Copperbelt</option>
+          <option>Eastern Province</option>
+          <option>Western Province</option>
+          <option>Luapula</option>
+          <option>Northern Province</option>
+          <option>Southern Province</option>
+          <option>Central Province</option>
+          <option>Northwestern</option>
+          <option>Muchinga</option>
+        </select>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULTS COUNT -->
+  <section style="padding: 20px 5% 0; background:var(--ivory);">
+    <div style="max-width:1200px; margin:0 auto;">
+      <p style="font-size:0.85rem; color:#8B6E55;" id="results-count">Showing <strong>12 dishes</strong></p>
+    </div>
+  </section>
+
+  <!-- MENU CARDS GRID -->
+  <section class="section" style="background: var(--ivory); padding-top:24px;">
+    <div class="section-inner">
+      <div class="cards-grid">
+
+        <!-- ── STAPLES ── -->
+        <article class="food-card animate-up" data-category="staples">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/nshima.jpg" alt="Nshima"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🌽</span><span>Nshima</span></div>
+            <span class="card-badge">Staple</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Nationwide</span><span class="card-rating">⭐ 4.9</span></div>
+            <h3 class="card-title">Nshima</h3>
+            <p class="card-desc">Zambia's iconic maize porridge — the backbone of every meal, eaten by hand with savoury relish.</p>
+            <div class="card-footer"><span class="card-time">⏱ 30 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="staples">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/ubwali.jpg" alt="Ubwali"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🫕</span><span>Ubwali</span></div>
+            <span class="card-badge">Staple</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Northern</span><span class="card-rating">⭐ 4.7</span></div>
+            <h3 class="card-title">Ubwali</h3>
+            <p class="card-desc">The Bemba name for nshima — stiff maize meal cooked to a smooth, thick consistency and served with umunani.</p>
+            <div class="card-footer"><span class="card-time">⏱ 30 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <!-- ── STEWS ── -->
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/ifisashi.jpg" alt="Ifisashi"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🥬</span><span>Ifisashi</span></div>
+            <span class="card-badge">Stew</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Eastern</span><span class="card-rating">⭐ 4.8</span></div>
+            <h3 class="card-title">Ifisashi</h3>
+            <p class="card-desc">A rich groundnut and greens stew — deep, creamy, and utterly satisfying alongside nshima.</p>
+            <div class="card-footer"><span class="card-time">⏱ 45 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/kapenta.jpg" alt="Kapenta"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🐟</span><span>Kapenta</span></div>
+            <span class="card-badge">Fish</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Luapula</span><span class="card-rating">⭐ 4.7</span></div>
+            <h3 class="card-title">Kapenta</h3>
+            <p class="card-desc">Lake Kariba sardines — fried crispy or stewed with tomatoes and onions into a protein-rich relish.</p>
+            <div class="card-footer"><span class="card-time">⏱ 25 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/chibwabwa.jpg" alt="Chibwabwa"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🎃</span><span>Chibwabwa</span></div>
+            <span class="card-badge">Veggie</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Copperbelt</span><span class="card-rating">⭐ 4.6</span></div>
+            <h3 class="card-title">Chibwabwa</h3>
+            <p class="card-desc">Pumpkin leaves slowly cooked in peanut sauce — a nutritious, green veggie relish loved across Zambia.</p>
+            <div class="card-footer"><span class="card-time">⏱ 35 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/chikanda.jpg" alt="Chikanda"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🫚</span><span>Chikanda</span></div>
+            <span class="card-badge">Specialty</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Northern</span><span class="card-rating">⭐ 4.5</span></div>
+            <h3 class="card-title">Chikanda</h3>
+            <p class="card-desc">Known as "African polony" — a unique cake made from wild orchid tubers and groundnuts, spiced with chillies.</p>
+            <div class="card-footer"><span class="card-time">⏱ 60 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <!-- ── STREET FOOD ── -->
+        <article class="food-card animate-up" data-category="street">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/vitumbuwa.jpg" alt="Vitumbuwa"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🥞</span><span>Vitumbuwa</span></div>
+            <span class="card-badge">Street</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Lusaka</span><span class="card-rating">⭐ 4.8</span></div>
+            <h3 class="card-title">Vitumbuwa</h3>
+            <p class="card-desc">Deep-fried fluffy doughnut balls — Zambia's most popular breakfast street snack, sold everywhere each morning.</p>
+            <div class="card-footer"><span class="card-time">⏱ 20 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="street">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/samp.jpg" alt="Samp"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🌾</span><span>Samp</span></div>
+            <span class="card-badge">Street</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Southern</span><span class="card-rating">⭐ 4.4</span></div>
+            <h3 class="card-title">Samp & Beans</h3>
+            <p class="card-desc">Crushed dried maize cooked with kidney beans — hearty, filling, and sold affordably at market stalls.</p>
+            <div class="card-footer"><span class="card-time">⏱ 90 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <!-- ── DRINKS ── -->
+        <article class="food-card animate-up" data-category="drinks">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/munkoyo.jpg" alt="Munkoyo"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🍶</span><span>Munkoyo</span></div>
+            <span class="card-badge">Drink</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Western</span><span class="card-rating">⭐ 4.5</span></div>
+            <h3 class="card-title">Munkoyo</h3>
+            <p class="card-desc">Traditional fermented maize and root drink — naturally sweet, lightly sour, and richly cultural.</p>
+            <div class="card-footer"><span class="card-time">⏱ 2 days</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="drinks">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/chibuku.jpg" alt="Chibuku"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🥛</span><span>Chibuku</span></div>
+            <span class="card-badge">Drink</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Nationwide</span><span class="card-rating">⭐ 4.3</span></div>
+            <h3 class="card-title">Chibuku</h3>
+            <p class="card-desc">Zambia's famous opaque sorghum beer — thick, fermented, and enjoyed communally in calabashes.</p>
+            <div class="card-footer"><span class="card-time">⏱ 3 days</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <!-- ── SNACKS ── -->
+        <article class="food-card animate-up" data-category="snacks">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/groundnuts.jpg" alt="Groundnuts"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🥜</span><span>Groundnuts</span></div>
+            <span class="card-badge">Snack</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Nationwide</span><span class="card-rating">⭐ 4.6</span></div>
+            <h3 class="card-title">Roasted Groundnuts</h3>
+            <p class="card-desc">Sun-dried peanuts roasted over charcoal — the simplest, most beloved Zambian snack sold in small paper cones.</p>
+            <div class="card-footer"><span class="card-time">⏱ 15 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+        <article class="food-card animate-up" data-category="desserts">
+          <div class="card-img-wrap">
+            <!-- IMAGE SLOT: <img src="../images/impwa.jpg" alt="Impwa"> -->
+            <div class="card-img-placeholder"><span class="ph-icon">🍌</span><span>Impwa</span></div>
+            <span class="card-badge">Sweet</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Central</span><span class="card-rating">⭐ 4.4</span></div>
+            <h3 class="card-title">Impwa (Egg Fruit)</h3>
+            <p class="card-desc">A traditional Zambian eggplant variety — slightly sweet, pan-fried with onions as a light relish or dessert treat.</p>
+            <div class="card-footer"><span class="card-time">⏱ 20 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+
+      </div><!-- end .cards-grid -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>🍲 Taste Zambia</h3>
+          <p>Celebrating the rich culinary heritage of Zambia — one dish at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="details.html">Recipes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Staples</a></li>
+            <li><a href="#">Stews</a></li>
+            <li><a href="#">Street Food</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="#">Lusaka</a></li>
+            <li><a href="#">Copperbelt</a></li>
+            <li><a href="#">Eastern</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Taste Zambia · App Innovators Club · Food Culture in Zambia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

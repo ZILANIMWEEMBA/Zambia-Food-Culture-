@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nshima with Ifisashi — Taste Zambia</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/details.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">🍲</div>
+      Taste Zambia
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="details.html" class="active">Recipes</a></li>
+      <li><a href="../index.html#culture">Culture</a></li>
+      <li><a href="../index.html#about" class="nav-cta">Explore</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="menu.html">Menu</a>
+    <span>›</span>
+    <span style="color:var(--bark);">Nshima with Ifisashi</span>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       DETAIL HERO — IMAGE + INFO
+  ══════════════════════════════════════ -->
+  <section class="detail-hero">
+    <!-- Left: Images -->
+    <div>
+      <div class="detail-img-main">
+        <!-- ORGANIZER IMAGE SLOT: <img src="../images/nshima-ifisashi-main.jpg" alt="Nshima with Ifisashi"> -->
+        <div class="detail-img-placeholder">
+          <span class="ph-icon">🍲</span>
+          <p>Main dish photo<br/><em>(organizer will provide)</em></p>
+        </div>
+      </div>
+      <!-- Thumbnail Gallery -->
+      <div class="detail-thumbs">
+        <div class="thumb active" data-src="../images/nshima-1.jpg">🌽</div>
+        <div class="thumb" data-src="../images/ifisashi-1.jpg">🥬</div>
+        <div class="thumb" data-src="../images/nshima-cooking.jpg">🍳</div>
+        <div class="thumb" data-src="../images/serving.jpg">🍽</div>
+      </div>
+    </div>
+
+    <!-- Right: Dish Info -->
+    <div class="detail-info">
+      <div class="detail-badges">
+        <span class="badge badge-region">🗺 Eastern Province</span>
+        <span class="badge badge-category">🌿 Traditional</span>
+        <span class="badge badge-popular">🔥 Most Loved</span>
+      </div>
+
+      <h1 class="detail-title">Nshima with Ifisashi</h1>
+
+      <p class="detail-desc">
+        The undisputed centrepiece of Zambian cuisine. Smooth, thick maize porridge served alongside a creamy groundnut and pumpkin leaf stew. This combination is prepared in homes, celebrations, and funerals alike — a dish that defines Zambian identity and brings families together.
+      </p>
+
+      <!-- Meta Info Row -->
+      <div class="detail-meta-row">
+        <div class="meta-item">
+          <span class="meta-label">Prep Time</span>
+          <span class="meta-value">15 min</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Cook Time</span>
+          <span class="meta-value">45 min</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Serves</span>
+          <span class="meta-value">4 – 6</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Difficulty</span>
+          <span class="meta-value">Easy</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Rating</span>
+          <span class="meta-value rating">⭐ 4.9 / 5</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="#recipe" class="btn-primary">📜 See Full Recipe</a>
+        <a href="#restaurant" class="btn-outline" style="color:var(--copper); border-color:var(--copper);">🏪 Find Restaurants</a>
+      </div>
+
+      <!-- Nutrition snippet -->
+      <div style="margin-top:28px; padding:18px 20px; background:var(--ivory); border-radius:var(--radius-md); border-left:4px solid var(--sage);">
+        <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--sage); margin-bottom:8px;">🌿 Nutrition Highlight</p>
+        <p style="font-size:0.875rem; color:var(--bark); margin:0;">Rich in complex carbohydrates, plant-based protein, and iron. The groundnuts in ifisashi provide healthy fats and essential minerals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       INGREDIENTS
+  ══════════════════════════════════════ -->
+  <section class="ingredients-section" id="recipe">
+    <div class="ingredients-inner">
+      <div class="section-header animate-up" style="text-align:left; margin-bottom:36px;">
+        <span class="section-eyebrow">What You Need</span>
+        <h2 class="section-title">Ingredients</h2>
+        <div class="section-divider" style="margin:12px 0 0;"></div>
+      </div>
+
+      <div class="ingredients-grid">
+        <!-- Nshima Ingredients -->
+        <div>
+          <h3 style="color:var(--bark); margin-bottom:20px; font-size:1.2rem;">For the Nshima</h3>
+          <div class="ingredient-list">
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">2 cups</span>
+              <span>White maize meal (mealie meal)</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">4 cups</span>
+              <span>Water</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">1 tsp</span>
+              <span>Salt (optional)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ifisashi Ingredients -->
+        <div>
+          <h3 style="color:var(--bark); margin-bottom:20px; font-size:1.2rem;">For the Ifisashi</h3>
+          <div class="ingredient-list">
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">3 cups</span>
+              <span>Fresh pumpkin leaves (or spinach)</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">1 cup</span>
+              <span>Ground raw peanuts (groundnuts)</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">2 medium</span>
+              <span>Tomatoes, chopped</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">1</span>
+              <span>Onion, finely diced</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">2 tbsp</span>
+              <span>Cooking oil</span>
+            </div>
+            <div class="ingredient-item">
+              <div class="ingredient-dot"></div>
+              <span class="ingredient-amount">to taste</span>
+              <span>Salt and chilli pepper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       RECIPE STEPS
+  ══════════════════════════════════════ -->
+  <section class="recipe-section">
+    <div class="recipe-inner">
+      <div class="section-header animate-up" style="text-align:left; margin-bottom:36px;">
+        <span class="section-eyebrow">Step by Step</span>
+        <h2 class="section-title">How to Prepare</h2>
+        <div class="section-divider" style="margin:12px 0 0;"></div>
+      </div>
+
+      <div class="steps-list">
+
+        <div class="step-item animate-up">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <p class="step-title">Boil the water</p>
+            <p class="step-text">Pour 4 cups of water into a heavy-bottomed pot and bring to a rolling boil over medium-high heat. Add a pinch of salt if desired.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+
+        <div class="step-item animate-up">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <p class="step-title">Make the porridge base</p>
+            <p class="step-text">Mix half a cup of maize meal with cold water to form a smooth paste. Pour this slurry into the boiling water while stirring continuously to avoid lumps.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+
+        <div class="step-item animate-up">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <p class="step-title">Thicken the nshima</p>
+            <p class="step-text">Gradually add the remaining maize meal, stirring vigorously with a wooden spoon (mthiko). Cook on low heat for 15–20 minutes, stirring frequently until the nshima pulls away from the sides of the pot and forms a stiff, smooth ball.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+
+        <div class="step-item animate-up">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <p class="step-title">Prepare the ifisashi base</p>
+            <p class="step-text">In a separate pan, heat oil and fry the onion until soft and translucent (about 3 minutes). Add the chopped tomatoes and cook until they break down into a sauce (5–7 minutes).</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+
+        <div class="step-item animate-up">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <p class="step-title">Add groundnuts and greens</p>
+            <p class="step-text">Stir in the ground peanuts along with a splash of water to loosen the mixture. Add the washed and chopped pumpkin leaves. Season with salt and chilli. Cook for 10–12 minutes until the greens are tender and the sauce is thick and creamy.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+
+        <div class="step-item animate-up">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <p class="step-title">Serve and enjoy!</p>
+            <p class="step-text">Shape the nshima into individual portions using a wet spoon or dampened hands. Serve hot on a plate with the ifisashi poured alongside. Traditionally eaten by pinching a small ball of nshima, forming a dip with your thumb, and scooping up the relish. Enjoy!</p>
+          </div>
+        </div>
+
+      </div><!-- end .steps-list -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CULTURAL NOTE
+  ══════════════════════════════════════ -->
+  <section class="section" style="background:var(--ivory); padding: 50px 5%;">
+    <div style="max-width:860px; margin:0 auto;">
+      <div style="background:var(--white); border-radius:var(--radius-lg); padding:40px; border-left:5px solid var(--copper); box-shadow:0 4px 20px var(--shadow);" class="animate-up">
+        <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--copper); margin-bottom:12px;">🎭 Cultural Significance</p>
+        <h3 style="font-family:var(--font-display); color:var(--bark); margin-bottom:14px; font-size:1.4rem;">"Ubwali tabuwa pa meza"</h3>
+        <p style="color:var(--bark); font-style:italic; margin-bottom:14px;">"Nshima never fails to be on the table" — Bemba proverb</p>
+        <p style="color:#5C3D22; font-size:0.9rem; line-height:1.8;">In Zambian tradition, nshima is more than food — it symbolises completeness. A meal without nshima is considered incomplete regardless of what else is served. At celebrations, funerals, and everyday family dinners, the ritual of cooking and sharing nshima is an act of love, hospitality, and belonging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       RESTAURANT
+  ══════════════════════════════════════ -->
+  <section class="restaurant-section" id="restaurant">
+    <div class="restaurant-inner">
+      <div class="section-header animate-up" style="text-align:left; margin-bottom:32px;">
+        <span class="section-eyebrow">Where to Eat</span>
+        <h2 class="section-title">Find This Dish Nearby</h2>
+        <div class="section-divider" style="margin:12px 0 0;"></div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:20px;">
+
+        <div class="restaurant-card animate-up">
+          <div class="restaurant-logo">🍽</div>
+          <div>
+            <h3 class="restaurant-name">Mama Africa Kitchen</h3>
+            <p class="restaurant-address">📍 Cairo Road, Lusaka City Centre</p>
+            <div style="display:flex; gap:20px; font-size:0.85rem; color:#8B6E55; margin-bottom:12px;">
+              <span>⭐ 4.8 rating</span>
+              <span>⏰ 07:00 – 21:00</span>
+              <span>📞 +260 97 123 4567</span>
+            </div>
+            <div class="restaurant-tags">
+              <span class="r-tag">Traditional Zambian</span>
+              <span class="r-tag">Family Friendly</span>
+              <span class="r-tag">Affordable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="restaurant-card animate-up">
+          <div class="restaurant-logo">🏠</div>
+          <div>
+            <h3 class="restaurant-name">Heritage House Restaurant</h3>
+            <p class="restaurant-address">📍 Kabulonga, Lusaka</p>
+            <div style="display:flex; gap:20px; font-size:0.85rem; color:#8B6E55; margin-bottom:12px;">
+              <span>⭐ 4.6 rating</span>
+              <span>⏰ 10:00 – 22:00</span>
+              <span>📞 +260 96 987 6543</span>
+            </div>
+            <div class="restaurant-tags">
+              <span class="r-tag">Fine Dining</span>
+              <span class="r-tag">Cultural Experience</span>
+              <span class="r-tag">Group Bookings</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED DISHES -->
+  <section class="section" style="background: var(--cream);">
+    <div class="section-inner">
+      <div class="section-header animate-up">
+        <span class="section-eyebrow">You Might Also Like</span>
+        <h2 class="section-title">Related <span>Dishes</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder"><span class="ph-icon">🐟</span><span>Kapenta</span></div>
+            <span class="card-badge">Fish</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Luapula</span><span class="card-rating">⭐ 4.7</span></div>
+            <h3 class="card-title">Kapenta</h3>
+            <p class="card-desc">Lake sardines stewed with tomatoes and onions.</p>
+            <div class="card-footer"><span class="card-time">⏱ 25 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder"><span class="ph-icon">🎃</span><span>Chibwabwa</span></div>
+            <span class="card-badge">Veggie</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Copperbelt</span><span class="card-rating">⭐ 4.6</span></div>
+            <h3 class="card-title">Chibwabwa</h3>
+            <p class="card-desc">Pumpkin leaves cooked in peanut sauce.</p>
+            <div class="card-footer"><span class="card-time">⏱ 35 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+        <article class="food-card animate-up" data-category="stews">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder"><span class="ph-icon">🫚</span><span>Chikanda</span></div>
+            <span class="card-badge">Specialty</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-region">🗺 Northern</span><span class="card-rating">⭐ 4.5</span></div>
+            <h3 class="card-title">Chikanda</h3>
+            <p class="card-desc">African polony made from wild orchid tubers.</p>
+            <div class="card-footer"><span class="card-time">⏱ 60 min</span><a href="details.html" class="card-link">View →</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>🍲 Taste Zambia</h3>
+          <p>Celebrating the rich culinary heritage of Zambia — one dish at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="details.html">Recipes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Staples</a></li>
+            <li><a href="#">Stews</a></li>
+            <li><a href="#">Street Food</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="#">Lusaka</a></li>
+            <li><a href="#">Eastern</a></li>
+            <li><a href="#">Northern</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Taste Zambia · App Innovators Club · Food Culture in Zambia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

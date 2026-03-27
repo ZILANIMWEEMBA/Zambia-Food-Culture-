@@ -1,0 +1,148 @@
+/* =========================================
+   DETAILS PAGE — Extra Styles
+   ========================================= */
+
+/* ── BREADCRUMB ── */
+.breadcrumb {
+  padding: calc(var(--nav-h) + 24px) 5% 0;
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; color: var(--bark);
+}
+.breadcrumb a { color: var(--copper); transition: color var(--transition); }
+.breadcrumb a:hover { color: var(--earth); }
+.breadcrumb span { color: #B0906A; }
+
+/* ── DETAIL HERO ── */
+.detail-hero {
+  padding: 28px 5% 60px;
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+}
+.detail-img-main {
+  border-radius: var(--radius-lg); overflow: hidden;
+  height: 420px;
+  background: linear-gradient(135deg, var(--earth), var(--copper));
+  box-shadow: 0 16px 48px var(--shadow-md);
+  display: flex; align-items: center; justify-content: center;
+}
+.detail-img-main img { height: 100%; object-fit: cover; }
+.detail-img-placeholder {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 12px; color: rgba(255,255,255,0.5); font-size: 0.85rem; text-align: center;
+}
+.detail-img-placeholder .ph-icon { font-size: 4rem; }
+
+.detail-thumbs {
+  display: flex; gap: 10px; margin-top: 12px;
+}
+.thumb {
+  width: 80px; height: 60px; border-radius: var(--radius-sm);
+  overflow: hidden; cursor: pointer; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--earth), var(--sand));
+  border: 2px solid transparent;
+  transition: border-color var(--transition);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.4); font-size: 1.2rem;
+}
+.thumb.active, .thumb:hover { border-color: var(--copper); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.detail-info { padding-top: 8px; }
+.detail-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.badge {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 5px 12px; border-radius: var(--radius-xl);
+}
+.badge-region  { background: rgba(201,106,43,0.12); color: var(--copper); }
+.badge-category{ background: rgba(90,122,74,0.12);  color: var(--leaf);   }
+.badge-popular { background: rgba(242,193,78,0.2);  color: #7A5C10;       }
+
+.detail-title  { color: var(--bark); margin-bottom: 10px; }
+.detail-desc   { font-size: 1rem; color: #5C3D22; line-height: 1.75; margin-bottom: 28px; }
+
+.detail-meta-row {
+  display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 28px;
+  padding: 18px 0; border-top: 1px solid rgba(201,106,43,0.12); border-bottom: 1px solid rgba(201,106,43,0.12);
+}
+.meta-item { display: flex; flex-direction: column; gap: 3px; }
+.meta-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #B0906A; }
+.meta-value { font-size: 0.95rem; font-weight: 600; color: var(--bark); }
+.meta-value.rating { color: var(--saffron); }
+
+/* ── INGREDIENTS ── */
+.ingredients-section { padding: 60px 5%; background: var(--ivory); }
+.ingredients-inner { max-width: 1200px; margin: 0 auto; }
+.ingredients-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+}
+.ingredient-list { display: flex; flex-direction: column; gap: 12px; }
+.ingredient-item {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px; background: var(--white);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--copper);
+  box-shadow: 0 2px 8px var(--shadow);
+  font-size: 0.9rem; color: var(--bark);
+  transition: transform var(--transition);
+}
+.ingredient-item:hover { transform: translateX(4px); }
+.ingredient-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--copper); flex-shrink: 0;
+}
+.ingredient-amount { font-weight: 600; color: var(--copper); min-width: 60px; }
+
+/* ── RECIPE STEPS ── */
+.recipe-section { padding: 60px 5%; }
+.recipe-inner { max-width: 860px; margin: 0 auto; }
+.steps-list { display: flex; flex-direction: column; gap: 24px; }
+.step-item {
+  display: flex; gap: 24px; align-items: flex-start;
+  animation: fadeInUp 0.5s ease both;
+}
+.step-num {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--copper); color: var(--white);
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(201,106,43,0.3);
+}
+.step-body { flex: 1; }
+.step-title { font-weight: 600; color: var(--bark); margin-bottom: 6px; }
+.step-text { font-size: 0.9rem; color: #5C3D22; line-height: 1.7; }
+.step-connector {
+  width: 2px; height: 24px; background: rgba(201,106,43,0.2);
+  margin: 0 21px;
+}
+
+/* ── RESTAURANT CARD ── */
+.restaurant-section { padding: 60px 5%; background: var(--ivory); }
+.restaurant-inner { max-width: 1200px; margin: 0 auto; }
+.restaurant-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: 32px; display: flex; gap: 32px; align-items: center;
+  box-shadow: 0 4px 20px var(--shadow);
+  border: 1px solid rgba(201,106,43,0.1);
+  max-width: 700px;
+}
+.restaurant-logo {
+  width: 80px; height: 80px; border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--copper), var(--saffron));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; color: var(--white); flex-shrink: 0;
+}
+.restaurant-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--bark); margin-bottom: 6px; }
+.restaurant-address { font-size: 0.875rem; color: #8B6E55; margin-bottom: 12px; }
+.restaurant-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.r-tag {
+  font-size: 0.75rem; font-weight: 500; color: var(--copper);
+  background: rgba(201,106,43,0.1); padding: 4px 10px; border-radius: var(--radius-xl);
+}
+
+/* ── RESPONSIVE DETAILS ── */
+@media (max-width: 900px) {
+  .detail-hero { grid-template-columns: 1fr; }
+  .ingredients-grid { grid-template-columns: 1fr; }
+  .restaurant-card { flex-direction: column; text-align: center; }
+}
